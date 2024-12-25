@@ -1,0 +1,30 @@
+.button {
+    padding: 18px 0;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    display: inline-block;
+    text-align: center;
+    width: 442px;
+    font-weight: 500;
+}
+
+@media (max-width: 640px) {
+    .button {
+        width: 370px;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+}
+
+.enabled {
+    background-color: #893168;
+    color: white;
+}
+
+.disabled {
+    background-color: white;
+    color: #6b7280; // Gray
+    border: 1px solid #6b7280;
+}
