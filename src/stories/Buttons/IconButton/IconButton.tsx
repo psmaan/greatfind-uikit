@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './IconButton.module.scss';
 import icon from './../../../assets/starIcon.png'
 
@@ -11,7 +10,7 @@ type IconButtonProps = {
 };
 
 const IconButton = (props: IconButtonProps) => {
-    const { label, width, active } = props;
+    const { active } = props;
 
     return (
         <button

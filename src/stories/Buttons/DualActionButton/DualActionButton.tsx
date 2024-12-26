@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './DualActionButton.module.scss';
 import icon from './../../../assets/sortIcon.png'
 
@@ -17,7 +16,6 @@ const DualActionButton = (props: DualActionButtonProps) => {
             ${active === 'seeListings' ? styles.SeeListings : ''}
             ${active === 'sort' ? styles.Sort : ''}
             `}
-            saveFilters={active === 'saveFilters'}
         >
             {active === 'sort' && icon && <img src={icon} className={styles.icon} />}
             {label}

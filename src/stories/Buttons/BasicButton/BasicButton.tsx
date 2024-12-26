@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './BasicButton.module.scss';
 
 type BasicButtonProps = {
@@ -10,7 +9,7 @@ type BasicButtonProps = {
 };
 
 const BasicButton = (props: BasicButtonProps) => {
-    const { label, width, active } = props;
+    const { label, active } = props;
 
     return (
         <button
