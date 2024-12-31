@@ -6,13 +6,13 @@
     border: 1px solid transparent;
     display: inline-block;
     text-align: center;
-    width: 190px;
+    width: 442px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
-    color: white;
-    background-color: #893168;
+    color: #5BB87D;
+    background-color: white;
 }
 
 .button>img {
@@ -22,7 +22,7 @@
 
 @media (max-width: 640px) {
     .button {
-        width: 104px;
+        width: 370px;
         font-size: 14px;
         padding: 12px 0;
     }

@@ -4,6 +4,11 @@
 
 * {
   font-size: 16px;
+  font-family: 'inter', sans-serif;
+}
+
+h1, span {
+  font-family: 'Inter', sans-serif;
 }
 
 @media (max-width: 640px) {

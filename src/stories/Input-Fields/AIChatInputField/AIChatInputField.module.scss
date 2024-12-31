@@ -1,0 +1,68 @@
+.input {
+    width: 670px;
+    padding: 20px;
+    border-radius: 20px;
+    height: 309px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    border: 1.5px solid #E6E6EA;
+    resize: none !important;
+    box-sizing: border-box;
+}
+
+.questions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.questions>div {
+    color: #6B7280;
+    background-color: #f3f4f6;
+    border-radius: 20px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    font-size: 14px;
+    margin: 6px 12px 6px 0;
+}
+
+.input>textarea {
+    border: 1px solid #E5E7EB;
+    border-radius: 20px;
+    padding: 16px;
+    height: 113px;
+    margin-top: 12px;
+}
+
+.input>button {
+    margin-left: auto;
+}
+
+.input>button {
+    width: 190px;
+    line-height: 24px;
+    padding: 18px 0;
+    margin-top: 12px;
+    background-color: #893168;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+@media (max-width: 640px) {
+    .input {
+        width: 370px;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #E5E7EB;
+}

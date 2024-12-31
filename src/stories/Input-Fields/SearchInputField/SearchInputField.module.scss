@@ -1,0 +1,46 @@
+.input {
+    width: 442px;
+    border-radius: 20px;
+    height: 52px;
+    display: flex;
+    justify-content: start;
+    padding: 0 16px;
+    align-items: center;
+    background-color: white;
+    position: relative;
+    border: 1.5px solid #E6E6EA;
+}
+
+.input>img {
+    width: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.input>input {
+    border: none;
+    background: transparent;
+    width: 311px;
+    font-size: 16px;
+}
+
+.input>input::placeholder {
+    color: #6B7280;
+}
+
+@media (max-width: 640px) {
+    .input {
+        width: 370px;
+        font-size: 14px;
+        padding: 12px 0;
+    }
+}
+
+.invalid {
+    border: 1.5px solid #E7545C;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
