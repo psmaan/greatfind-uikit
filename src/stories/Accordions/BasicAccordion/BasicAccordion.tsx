@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styles from './BasicAccordion.module.scss';
 import uparrow from './../../../assets/upArrowIcon.png';
 import downarrow from './../../../assets/downArrowIcon.png';

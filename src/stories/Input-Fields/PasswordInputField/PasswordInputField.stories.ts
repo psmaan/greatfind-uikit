@@ -8,5 +8,8 @@ const meta: Meta<typeof PasswordInputField> = {
 
 export default meta;
 
-
+export const Default: StoryObj<typeof PasswordInputField> = {
+    args: {
+    },
+};
 

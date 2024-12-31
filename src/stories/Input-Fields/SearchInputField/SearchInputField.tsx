@@ -2,13 +2,12 @@ import styles from './SearchInputField.module.scss';
 import search from './../../../assets/searchIcon.png';
 
 type SearchInputFieldProps = {
-    imgpath?: string;
     active: string;
 
 }
 
 const SearchInputField = (props: SearchInputFieldProps) => {
-    const { imgpath, active } = props;
+    const { active } = props;
 
     return (
         <div

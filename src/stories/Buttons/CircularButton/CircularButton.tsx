@@ -1,7 +1,7 @@
 import styles from './CircularButton.module.scss';
 
 type CircularButtonProps = {
-    active?: 'withoutText' | 'withText';
+    active?: string;
     imgpath: string;
 };
 

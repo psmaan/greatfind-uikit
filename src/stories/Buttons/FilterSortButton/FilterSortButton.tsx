@@ -3,7 +3,7 @@ import styles from './FilterSortButton.module.scss';
 type FilterSortButtonProps = {
     label: string;
     active?: 'filter' | 'sort';
-    imgpath: 'string';
+    imgpath: string;
 };
 
 const FilterSortButton = (props: FilterSortButtonProps) => {

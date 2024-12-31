@@ -1,6 +1,4 @@
-import React from 'react';
 import styles from './AIChatInputField.module.scss';
-import profile from './../../../assets/profileIcon.png';
 
 type AIChatInputFieldProps = {
     questions?: string[];
@@ -18,7 +16,7 @@ const AIChatInputField = (props: AIChatInputFieldProps) => {
                     </div>
                 ))}
             </div>
-            <textarea type="textarea" placeholder="Your message..." />
+            <textarea placeholder="Your message..." />
             <button className={styles.sendButton}>Send</button>
         </div>
     );
