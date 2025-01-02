@@ -1,0 +1,100 @@
+.subcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 915px;
+    height: 144px;
+    padding: 0 88px;
+    border-radius: 20px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+}
+
+.subcard>img {
+    position: absolute;
+    height: 100%;
+    right: 100px;
+}
+
+.subcard>div {
+    display: flex;
+    align-items: center;
+}
+
+.subcard>div>div {
+    margin-left: 100px;
+}
+
+.Advanced {
+    background: linear-gradient(90deg, #4D9467 0%, #5BB87D 100%);
+}
+
+.Premium {
+    background: linear-gradient(90deg, #A75689 0%, #893168 100%);
+}
+
+.Free {
+    background: linear-gradient(90deg, #42526A 0%, #576C8A 100%);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+    opacity: 0.9;
+    /* Adjust for better contrast with background */
+}
+
+.expiry {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.expiry>h1 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.expiry>p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.upgradeButton {
+    width: 190px;
+    height: 52px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5BB87D;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    z-index: 20;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-right: 60px;
+}
+
+.upgradeButton:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 640px) {
+    .subcard {
+        width: 370px;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .upgradeButton {
+        width: 100%;
+        text-align: center;
+    }
+}

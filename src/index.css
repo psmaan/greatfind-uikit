@@ -11,6 +11,11 @@ h1, span {
   font-family: 'Inter', sans-serif;
 }
 
+h1, h2, span, p {
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 640px) {
   * {
     font-size: 14px;
