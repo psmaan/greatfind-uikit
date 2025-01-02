@@ -1,5 +1,4 @@
 import styles from './ProductCard.module.scss';
-import logo from './../../../assets/gf-logo.png';
 
 type ProductCardProps = {
     active: string;

@@ -14,22 +14,22 @@ const SubscriptionCard = (props: SubscriptionCardProps) => {
         <div
             className={`
             ${styles.subcard}
-            ${active === 'advanced' ? styles.Advanced : ''}
-            ${active === 'premium' ? styles.Premium : ''}
-            ${active === 'free' ? styles.Free : ''}
+            ${active === 'Advanced' ? styles.Advanced : ''}
+            ${active === 'Premium' ? styles.Premium : ''}
+            ${active === 'Free' ? styles.Free : ''}
             `}
         >
             <img src={logo} alt="Logo" />
             <div>
                 <h1>{subscription}</h1>
-                {(active === 'advanced' || active === 'premium') && (
+                {(active === 'Advanced' || active === 'Premium') && (
                     <div className={styles.expiry}>
                         <h1>Expiry Date</h1>
                         <p>{expiry}</p>
                     </div>
                 )}
             </div>
-            {active === 'advanced' && <button className={styles.upgradeButton}>Upgrade</button>}
+            {active === 'Advanced' && <button className={styles.upgradeButton}>Upgrade</button>}
         </div>
     );
 };

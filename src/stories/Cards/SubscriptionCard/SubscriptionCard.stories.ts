@@ -10,14 +10,14 @@ export default meta;
 
 export const Free: StoryObj<typeof SubscriptionCard> = {
     args: {
-        active: 'free',
+        active: 'Free',
         subscription: 'Free Plan',
     },
 };
 
 export const Advanced: StoryObj<typeof SubscriptionCard> = {
     args: {
-        active: 'advanced',
+        active: 'Advanced',
         subscription: 'Advanced',
         expiry: '07/07/2025',
     },
@@ -25,7 +25,7 @@ export const Advanced: StoryObj<typeof SubscriptionCard> = {
 
 export const Premium: StoryObj<typeof SubscriptionCard> = {
     args: {
-        active: 'premium',
+        active: 'Premium',
         subscription: 'Premium',
         expiry: '07/07/2025',
     },
