@@ -13,7 +13,7 @@ export const Default: StoryObj<typeof SubscriptionToggle> = {
         plans: [
             {
                 title: 'Advanced',
-                price: '$14.99/month',
+                price: '14.99',
                 benefits: [
                     'Up to 10 locations',
                     'Up to 5 notifications',
@@ -23,13 +23,13 @@ export const Default: StoryObj<typeof SubscriptionToggle> = {
             },
             {
                 title: 'Premium',
-                price: '$29.99/month',
+                price: '29.99',
                 benefits: [
                     'Up to 20 locations',
                     'Up to 10 notifications',
                     'Additional premium features',
                 ],
-                discount: 'Save 10%',
+                discount: 'Save 20%',
                 isActive: false,
             },
         ],

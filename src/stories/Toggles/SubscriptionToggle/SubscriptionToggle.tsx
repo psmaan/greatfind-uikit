@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './SubscriptionToggle.module.scss';
+import './../../../index.css';
 
 type SubscriptionPlan = {
     title: string;
@@ -41,7 +42,7 @@ const SubscriptionToggle = ({ plans }: SubscriptionToggleProps) => {
                                     </span>
                                 )}
                             </h2>
-                            <p>{plan.price}</p>
+                            <p>${plan.price}<span>/month</span></p>
                         </div>
                         <input
                             type="radio"
@@ -53,14 +54,14 @@ const SubscriptionToggle = ({ plans }: SubscriptionToggleProps) => {
                     {selectedPlan === index && (
                         <div className={styles.planDetails}>
                             <div>
-                                <ul>
+                                <ul className={styles.ticklist}>
                                     {plan.benefits.map((benefit, idx) => (
                                         <li key={idx}>
                                             {benefit}
                                         </li>
                                     ))}
                                 </ul>
-                                <ul>
+                                <ul className={styles.crosslist}>
                                     {plan.benefits.map((benefit, idx) => (
                                         <li key={idx}>
                                             {benefit}
@@ -68,12 +69,15 @@ const SubscriptionToggle = ({ plans }: SubscriptionToggleProps) => {
                                     ))}
                                 </ul>
                             </div>
-                            <button className={styles.subscribeButton}>
-                                Subscribe
-                            </button>
-                            <p className={styles.additionalInfo}>
-                                Additional fees may apply due to payment provider commissions. Subscription plans and pricing may be subject to change by our team.
-                            </p>
+                            <div>
+                                <p className={styles.additionalInfo}>
+                                    Additional fees may apply due to payment provider commissions. Subscription plans and pricing may be subject to change by our team.
+                                </p>
+                                <button className={styles.subscribeButton}>
+                                    Subscribe
+                                </button>
+                            </div>
+
                         </div>
                     )}
                 </div>
@@ -83,4 +87,3 @@ const SubscriptionToggle = ({ plans }: SubscriptionToggleProps) => {
 };
 
 export default SubscriptionToggle;
-
